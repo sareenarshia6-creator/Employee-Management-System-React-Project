@@ -1,14 +1,4 @@
-```markdown
-# 👨‍💼 Employee Management System
 
-**A functional, frontend-focused React.js application designed to manage employees, assign tasks, and track their progress through a role-based dashboard system.**
-
-![React](https://img.shields.io/badge/React-18.x-blue)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC)
-![Vite](https://img.shields.io/badge/Vite-Bundler-purple)
-![Context API](https://img.shields.io/badge/Context_API-State_Management-orange)
-
----
 
 ## 📝 Project Overview
 
@@ -107,4 +97,4 @@ The personalized workspace for individual workers.
 - [ ] **Dynamic Status Buttons:** Implement the `onClick` functionality on the Employee dashboard cards allowing users to actually click "Mark as Completed", directly updating the global state.
 - [ ] **Admin Member Creation:** Add a specialized panel for Admins to register new employees dynamically from the UI.
 - [ ] **Toast Notifications:** Integrate a library like `react-toastify` to provide better UX feedback during invalid login attempts or successful task creations.
-```
+
