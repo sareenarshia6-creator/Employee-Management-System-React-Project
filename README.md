@@ -1,4 +1,12 @@
+# 👨‍💼 Employee Management System
+**A functional, frontend-focused React.js application designed to manage employees, assign tasks, and track their progress through a role-based dashboard system.**
 
+![React](https://img.shields.io/badge/React-18.x-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC)
+![Vite](https://img.shields.io/badge/Vite-Bundler-purple)
+![Context API](https://img.shields.io/badge/Context_API-State_Management-orange)
+
+---
 
 ## 📝 Project Overview
 
@@ -26,6 +34,37 @@ Unlike standard to-do lists, this project handles complex user authentication (f
 * **React Context API (`createContext`, `useContext`)**: Employed to create an `AuthProvider` that centrally manages the currently logged-in user and the global employee data state.
 * **Local Storage API**: Native browser API used as a mock backend to store user credentials, task arrays, and task status updates permanently in the user's browser via JSON stringification and parsing.
 
+
+## 📂 Project Structure
+
+A clean, component-driven folder structure is maintained for scalability:
+
+```text
+src/
+├── components/
+│   ├── Auth/
+│   │   └── Login.jsx           # Handles authentication UI and logic
+│   ├── Dashboard/
+│   │   ├── AdminDashboard.jsx  # Admin view
+│   │   └── EmployeeDashboard.jsx # Employee view
+│   ├── TaskList/               # Task card variations
+│   │   ├── AcceptTask.jsx
+│   │   ├── CompleteTask.jsx
+│   │   ├── FailedTask.jsx
+│   │   └── NewTask.jsx
+│   └── others/
+│       ├── Header.jsx          # Top navigation and logout
+│       ├── CreateTask.jsx      # Admin task creation form
+│       ├── AllTasks.jsx        # Admin view of all employee tasks
+│       └── TaskListNumbers.jsx # Stats cards (counters)
+├── context/
+│   └── AuthProvider.jsx        # Context API for global state
+├── utils/
+│   └── localStorage.jsx        # Helper functions to get/set local storage data
+├── App.jsx                     # Main routing and auth-check logic
+└── main.jsx                    # Application entry point wrapped in AuthProvider
+
+```
 ## 📊 Local Storage Data Structure
 
 Since there is no traditional backend database, the application relies on structured JSON data saved in the browser's Local Storage. 
